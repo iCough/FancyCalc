@@ -1,0 +1,27 @@
+body {
+
+}
+
+#device {
+    background-color: grey;  
+    margin: 10px;
+    height: 500px;   
+}
+
+#display {
+    background-color: lightgray;
+
+    margin: 20px 20px 0 20px;
+    padding: 50px 10px 80px 10px;
+}
+
+#numpad {
+    background-color: lightgray;
+
+    margin: 150px 20px 0 20px;
+    padding: 100px 10px 100px 10px;
+}
+
+@media only screen and (max-width: 400px) {
+
+}

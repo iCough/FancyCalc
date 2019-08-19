@@ -1,5 +1,7 @@
-
+console.log("hi!");
 const result = 0;
+
+var x = 
 
 function add(a, b) {
     return result = a + b;    
