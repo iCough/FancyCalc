@@ -3,6 +3,7 @@ body {
 }
 
 #device {
+    border: 20px solid grey;
     background-color: grey;  
     margin: 10px;
     height: 500px;   
@@ -11,17 +12,35 @@ body {
 #display {
     background-color: lightgray;
 
-    margin: 20px 20px 0 20px;
-    padding: 50px 10px 80px 10px;
+    margin: 10px 10px 0 10px;
+    padding: 30px 10px 50px 10px;
+}
+
+#screen {
+    width: 98%;
+    height: 30px;
+    font-size: 1.25em;
 }
 
 #numpad {
     background-color: lightgray;
 
-    margin: 150px 20px 0 20px;
+    margin: 150px 10px 0 10px;
     padding: 100px 10px 100px 10px;
-}
+}   
 
-@media only screen and (max-width: 400px) {
+.button {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 17px;
+    margin: 4px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
-}
+.button1 {border-radius: 12px;}
+

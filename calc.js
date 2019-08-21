@@ -1,4 +1,24 @@
-console.log("hi!");
+
+
+const one = document.querySelector(".button1");
+//const one = document.getElementById("one");
+
+console.log(one);
+
+/**
+ * BUTTON CONTROL
+ */
+one.addEventListener("click", function(sth) {
+    
+    console.log("click!");
+});
+ 
+
+
+/**
+ * FUNCTIONS
+ */
+
 const result = 0;
 
 var x = 
