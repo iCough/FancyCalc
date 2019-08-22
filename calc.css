@@ -42,5 +42,18 @@ body {
     cursor: pointer;
   }
 
-.button1 {border-radius: 12px;}
+.button1 {border-radius: 12px; padding: 17px 19px 17px 19px;}
+.button2 {border-radius: 12px;}
+.button3 {border-radius: 12px;}
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 12px;}
+.button6 {border-radius: 12px;}
+.button7 {border-radius: 12px;}
+.button8 {border-radius: 12px;}
+.button9 {border-radius: 12px;}
+.button0 {border-radius: 12px;}
 
+#basicFunction {
+    background-color: black;
+    padding: 2px;
+}
