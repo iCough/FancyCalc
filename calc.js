@@ -1,7 +1,7 @@
 
 
 const numPad = document.getElementById('numpad');
-numPad.addEventListener("click", numPadClickHandler());
+numPad.addEventListener("click", numPadClickHandler);
 
 
 
