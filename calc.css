@@ -1,15 +1,21 @@
 body {}
 
+#wrapper {
+    text-align: center;
+}
+
 #device {
+    display: inline-block;
     border: 20px solid grey;
     background-color: grey;
     margin: 10px;
     height: 500px;
+    width: 300px;
 }
 
 #display {
     background-color: lightgray;
-    margin: 10px 10px 0 10px;
+    margin: 10px 5px 0 5px;
     padding: 30px 10px 50px 10px;
 }
 
@@ -19,10 +25,23 @@ body {}
     font-size: 1.25em;
 }
 
+#functions {
+    margin: 10px 5px 0 5px;
+    padding: 30px 10px 50px 10px;
+}
+
+#basicFunctions {
+    background-color: black;
+    margin: 0 5px 0 100px;
+
+    float: left;
+}
+
 #numpad {
     background-color: lightgray;
-    margin: 150px 10px 0 10px;
-    padding: 100px 10px 100px 10px;
+    margin: 10px 100px 0 5px;
+    padding: 30px 10px 50px 10px;
+    float: left;
 }
 
 .button {

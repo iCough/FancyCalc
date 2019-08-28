@@ -4,8 +4,11 @@ const numPad = document.getElementById('numpad');
 
 numPad.addEventListener("click", numPadClickHandler);
 
+
 /**
- * Display keeps protocol of the buttons that were pressed
+ * Display 
+ * 
+ * - keeps protocol of the buttons that were pressed
  */
 console.log(screen);
 screen.textContent = "afasd";
@@ -20,7 +23,6 @@ function numPadClickHandler(event) {
     console.log(event);
     // console.log(event.target);
     const clickedButton = event.target;
-
     const num = parseInt(clickedButton.textContent);
     return num;
 }
