@@ -25,7 +25,6 @@ numPad.addEventListener("click", function(event){
  * 
  * - keeps protocol of the buttons that were pressed
  */
-
  function calculation() {
 
  }
