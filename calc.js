@@ -2,7 +2,22 @@
 var screen = document.getElementById("screen");
 const numPad = document.getElementById('numpad');
 
-numPad.addEventListener("click", numPadClickHandler);
+var typedNums = [];
+
+/**
+ * Numpad-Clicks
+ */
+numPad.addEventListener("click", function(event){
+    const clickedButton = event.target;
+    var num = parseInt(clickedButton.textContent);
+    typedNums.push(num);
+    console.log(typedNums);
+});
+
+/**
+ * Delete
+ */
+
 
 
 /**
@@ -10,22 +25,26 @@ numPad.addEventListener("click", numPadClickHandler);
  * 
  * - keeps protocol of the buttons that were pressed
  */
-console.log(screen);
-screen.textContent = "afasd";
+
+ function calculation() {
+
+ }
+
 
 
 /**
- * processes the information, that was passed through 
  * numPadClickHandler
- * @ event
+ * 
+ * - processes information, passed from numPad-Eventlistener 
+ * @param event
  */
-function numPadClickHandler(event) {
-    console.log(event);
-    // console.log(event.target);
-    const clickedButton = event.target;
-    const num = parseInt(clickedButton.textContent);
-    return num;
-}
+// function numPadClickHandler(event) {
+//     // console.log(event.target);
+//     const clickedButton = event.target;
+//     var num = parseInt(clickedButton.textContent);
+//     console.log(num);
+//     typedNums.push(num);
+// }
 
 
 

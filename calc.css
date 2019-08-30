@@ -7,7 +7,9 @@ body {}
 #device {
     display: inline-block;
     border: 20px solid grey;
+    border-radius: 20px;
     background-color: grey;
+    
     margin: 10px;
     height: 500px;
     width: 300px;
@@ -16,7 +18,7 @@ body {}
 #display {
     background-color: lightgray;
     margin: 10px 5px 0 5px;
-    padding: 30px 10px 50px 10px;
+    padding: 30px 10px 80px 10px;
 }
 
 #screen {
@@ -26,22 +28,9 @@ body {}
 }
 
 #functions {
-    margin: 10px 5px 0 5px;
-    padding: 30px 10px 50px 10px;
-}
-
-#basicFunctions {
-    background-color: black;
-    margin: 0 5px 0 100px;
-
-    float: left;
-}
-
-#numpad {
-    background-color: lightgray;
-    margin: 10px 100px 0 5px;
-    padding: 30px 10px 50px 10px;
-    float: left;
+    background-color: pink;
+    margin: 10px 5px 10px 5px;
+    padding: 30px 10px 120px 10px;
 }
 
 .button {
@@ -49,57 +38,43 @@ body {}
     /* Green */
     border: none;
     color: black;
-    padding: 17px;
+    padding: 15px;
     margin: 4px 2px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    cursor: pointer;
 }
 
-.button1 {
+/*  NUMPAD BUTTONS  */
+#numpad {
+    background-color: rgb(203, 122, 122);
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    float: left;
+}
+.button1, .button2, .button3, .button4, .button5,
+.button6, .button7, .button8, .button9, .buttonComma {
     border-radius: 12px;
-    padding: 17px 19px 17px 19px;
+    padding: 5px 20px;
 }
-
-.button2 {
-    border-radius: 12px;
-}
-
-.button3 {
-    border-radius: 12px;
-}
-
-.button4 {
-    border-radius: 12px;
-}
-
-.button5 {
-    border-radius: 12px;
-}
-
-.button6 {
-    border-radius: 12px;
-}
-
-.button7 {
-    border-radius: 12px;
-}
-
-.button8 {
-    border-radius: 12px;
-}
-
-.button9 {
-    border-radius: 12px;
-}
-
 .button0 {
     border-radius: 12px;
+    padding: 8px 25px;
+    grid-column: 1/3;
+    grid-row: 4;
 }
 
-#basicFunction {
+/*  BASIC FUNCTIONS  */
+#basicFunctions {
     background-color: black;
-    padding: 2px;
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.optButton {
+}
+.plus, .minus, .div, .multi, .DEL, .AC, .ANS, .equal{
+    border: none;
+    border-radius: 12px;
+    padding: 7px 10px;
+    margin: 4px 4px;
 }
