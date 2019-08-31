@@ -7,7 +7,7 @@
     - [ ] input or
     - [ ] normal element
 - [ ] input can be entered via
-    - [ ] button-clicks
+    - [x] button-clicks
     - [ ] keyboard-input
 
 #### Current State:
