@@ -1,5 +1,9 @@
 /* @media */
 
+
+/*  ############
+        IPAD   
+    ############  */
 @media only screen and (max-width: 768px) {
     #wrapper {
         display: grid;
