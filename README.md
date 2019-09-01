@@ -9,6 +9,9 @@
 - [ ] input can be entered via
     - [x] button-clicks
     - [ ] keyboard-input
+- [ ] equals function
+    - for-loop wont work
+- [ ] noOpTwice function
 
 #### Current State:
 
