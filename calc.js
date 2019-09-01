@@ -16,7 +16,7 @@ numPad.addEventListener("click", (event) => {
 });
 
 /**
- * Delete / RESET
+ * Protocol of pressed buttons
  * 
  * (1) check, which function-button was pressed
  * (2) switch-statement decides, which of 8 cases
@@ -25,50 +25,83 @@ numPad.addEventListener("click", (event) => {
 basicFunct.addEventListener("click", (event) => {
     console.log(`Pressed key: ${event.target.textContent}`);
     switch (event.target.textContent) {
-        case ("DEL"):
-            deleteLast();
+        case ("DEL"):               // delete last entry
+            typedNums.pop();
             break;
-        case ("AC"):
-            deleteAll();
+        case ("AC"):                // delete everything
+            typedNums.length = 0;
             break;
-        case ("x"):
-            if (true)
+        case ("x"):                 // multiply
             typedNums.push("x");
             console.log(typedNums);
             break;
-        case ('&divide'):
-            typedNums.push('&divide');
+        case ("÷"):                 // divide
+            typedNums.push("÷");
             console.log(typedNums);
             break;
-        case ("+"):
+        case ("+"):                 // add
             typedNums.push("+");
             console.log(typedNums);
             break;
-        case ("-"):
-                typedNums.push("-");
-                console.log(typedNums);
+        case ("-"):                  // subtract
+            typedNums.push("-");
+            console.log(typedNums);
             break;
-        case ("ANS"):
-                alert("not implemented yet");
+        case ("ANS"):               // use last entri(es)
+            alert("not implemented yet");
             break;
-        case ("="):
-                typedNums.push("=");
-                console.log(typedNums);
+        case ("="):                 // equals
+            equals();
+            break;
+            default: 
+            alert ("something went wrong!"); 
     }
 });
 
-// Reset calculator
-function deleteAll() {
-    console.log(`Pressed key: ${event.target.textContent}`);
-    typedNums.length = 0;
-}
-// Delete 
-function deleteLast() {
-    typedNums.pop();
-    console.log(`Array: ${typedNums}`);
-}
-// no same operations twice
+/**
+ * Compute the solution
+ * 
+ *  1) steps through array
+ *      a. searches for x and ÷ operations
+ *      b. searches for + and - operations
+ *      c. if a. applies, compute the decimals around it
+ **/
+function equals() {
+    console.log("entered 'equals'-function");
+    for (let i = 0; i < typedNums; i++) {
 
+        console.log(typedNums);
+        if (typedNums[i] == "x" || typedNums[i] == "÷") {
+            console.log(elem[index]);
+        } else if (typedNums[i] == "+" || typedNums[i] == "-") {
+            
+        }
+    }
+
+    // let interim = 0;
+
+    // typedNums.forEach(elem => {
+    //     // console.log(typeof elem);
+    //     // if input is a number
+    //     if (elem !== NaN) {
+    //         interim += elem;
+    //     }
+    //     // if input is not a number
+    //     if (elem == NaN) {
+
+    //     }
+    // });
+}
+
+/**
+ * No same operations twice
+ * 
+ *  - an operation will only be added once to the array
+ *  - repetitions will be ignored
+ */
+function noOpTwice() {
+
+}
 
 
 
@@ -80,19 +113,3 @@ function deleteLast() {
 function calculation() {
 
 }
-
-
-
-/**
- * numPadClickHandler
- *
- * - processes information, passed from numPad-Eventlistener
- * @param event
- */
-// function numPadClickHandler(event) {
-//     // console.log(event.target);
-//     const clickedButton = event.target;
-//     var num = parseInt(clickedButton.textContent);
-//     console.log(num);
-//     typedNums.push(num);
-// }
