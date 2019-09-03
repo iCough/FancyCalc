@@ -15,5 +15,5 @@
 
 #### Current State:
 
-<img src="images/screenshot.png" width="500"> <img src="images/screenshot1.png" width="500">
+<img src="images/screenshot.png" width="300"> <img src="images/screenshot1.png" width="300">
 
