@@ -1,7 +1,7 @@
 ## FancyCalc
 
 #### to-Do
-- [ ] arrange all html elements via grid
+- [x] arrange all html elements via grid
 - [ ] divide-sign can't be pushed into array
 - [ ] display of numbers via
     - input or
@@ -15,5 +15,5 @@
 
 #### Current State:
 
-<img src="images/screenshot.png" width="300"> <img src="images/screenshot1.png" width="300">
+<img src="images/screenshot.png" width="400"> <img src="images/screenshot1.png" width="400">
 
