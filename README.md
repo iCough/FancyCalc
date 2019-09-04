@@ -2,11 +2,13 @@
 
 #### to-Do
 - [x] arrange all html elements via grid
-- [ ] input can be entered via
-    - [x] button-clicks
-    - [ ] keyboard-input
+- [ ] input can be entered
+    - [x] via button-clicks
+    - [ ] via keyboard-input
 - [ ] equals function
-    - for-loop wont work
+    - [ ] step through array of inputs recursevely
+    - [ ] turn input into Objects with properties
+    - [ ] make it work
 - [ ] noOpTwice function
 
 #### Current State:
