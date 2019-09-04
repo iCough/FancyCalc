@@ -2,9 +2,6 @@
 
 #### to-Do
 - [x] arrange all html elements via grid
-- [ ] display of numbers via
-    - input or
-    - normal element
 - [ ] input can be entered via
     - [x] button-clicks
     - [ ] keyboard-input
