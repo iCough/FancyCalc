@@ -97,34 +97,44 @@ basicFunct.addEventListener("click", (event) => {
  **/
 function equals() {
 
-    var multiInterim = 0;
+    // entered input will be saved here
+    var createdObj = [];
 
-    console.log("entered 'equals'-function");
+// 1) steps through array recursively, until no elements are left
+//      + turn every Element into Object
+
     for (let i = 0; i < typedNums.length; i++) {
 
-        // console.log(typedNums);
-        if (typedNums[i] === "x") {
-            // console.log("* or / ==>  " + typedNums[i]);
-            multiInterim = typedNums[i-1] * typedNums[i+1];
-            console.log(multiInterim);
-        }
-
-        if (typedNums[i] === "÷") {
-
-        }
-
-        if (typedNums[i] === "+") {
-
-        }
-        
-        if (typedNums[i] == "-") {
-    
+        console.log(typedNums[i]);
+        if (typedNums[i] !== NaN) {
+            
         }
     }
 
-    /**
-     * 
-     */
+    // var multiInterim = 0;
+
+    // console.log("entered 'equals'-function");
+    // for (let i = 0; i < typedNums.length; i++) {
+
+    //     // console.log(typedNums);
+    //     if (typedNums[i] === "x") {
+    //         // console.log("* or / ==>  " + typedNums[i]);
+    //         multiInterim = typedNums[i-1] * typedNums[i+1];
+    //         console.log(multiInterim);
+    //     }
+
+    //     if (typedNums[i] === "÷") {
+
+    //     }
+
+    //     if (typedNums[i] === "+") {
+
+    //     }
+        
+    //     if (typedNums[i] == "-") {
+    
+    //     }
+    // }
 }
 
 /**
@@ -146,4 +156,15 @@ function noOpTwice() {
  */
 function calculation() {
 
+}
+
+/**
+ * Number-Object
+ *  - bool isNum = true;
+ *  - state: 
+ */
+function NumberObj(value) {
+    this.isNum = true;
+    this.isOpen = true;
+    this.value = value;
 }
