@@ -32,6 +32,7 @@ basicFunct.addEventListener("click", (event) => {
             break;
         case ("AC"):                // delete everything
             typedNums.length = 0;
+            window.location.reload();
             console.log(typedNums);
             console.log(`Array-Length: ${typedNums.length}`);
             break;
@@ -56,15 +57,17 @@ basicFunct.addEventListener("click", (event) => {
             break;
         case ("="):                 // equals
             equals();
+            typedNums.length = 0;
             break;
-            default: 
-            alert ("something went wrong!"); 
+        default:
+            alert("something went wrong!");
     }
 });
 
 /**
  * Compute the solution
  * 
+ *  Option (A)
  *  1) steps through array recursively, until no elements are left
  *      1.1) First Iteration:
  *          a. turns every read element into an Object
@@ -72,6 +75,7 @@ basicFunct.addEventListener("click", (event) => {
  *                      Object has attributes:
  *                      - state: open / closed;
  *                      - bool isNum: true;
+ *                      - bool isPos: true;
  *              a2. if Object is String (operation or other symbol)
  *                      Object has attributes:
  *                      - state: open / closed;
@@ -93,24 +97,29 @@ basicFunct.addEventListener("click", (event) => {
  *              d1. consider all involved elements and save solution
  *              d2. give involved element-Objects keyValue "closed"
  *              d3. repeat 1.2)
- * 
+ 
  **/
 function equals() {
 
-    // entered input will be saved here
-    var createdObj = [];
+    // entered input as Strings
+    // var createdObjs = [];
+    // typedNums.forEach(elems => {
+    //     createdObjs.push(elems.toString());
+    // });
 
-// 1) steps through array recursively, until no elements are left
-//      + turn every Element into Object
-
+    /**
+     * INPUT (+) and/or (-)
+     *  • if input starts with (-), do ...
+     *  • if input starts with (+), do ...
+     */
+    var interim = 0;
     for (let i = 0; i < typedNums.length; i++) {
-
-        console.log(typedNums[i]);
-        if (typedNums[i] !== NaN) {
-            
-        }
+        // if i = integer, then...
+        // if i = symbol, then...
     }
+    return ;
 
+    
     // var multiInterim = 0;
 
     // console.log("entered 'equals'-function");
@@ -119,7 +128,7 @@ function equals() {
     //     // console.log(typedNums);
     //     if (typedNums[i] === "x") {
     //         // console.log("* or / ==>  " + typedNums[i]);
-    //         multiInterim = typedNums[i-1] * typedNums[i+1];
+    //         multiInterim = typedNums[i - 1] * typedNums[i + 1];
     //         console.log(multiInterim);
     //     }
 
@@ -130,11 +139,13 @@ function equals() {
     //     if (typedNums[i] === "+") {
 
     //     }
-        
+
     //     if (typedNums[i] == "-") {
-    
+
     //     }
     // }
+
+
 }
 
 /**
